@@ -1,0 +1,558 @@
+
+/* Navbar CSS */
+.links {
+  list-style-type: none;
+  font-size: 1.75em;
+  margin:0;
+  display: inline;
+  float: right;
+  height: 100%;
+  padding: 0 0 10px 0 !important;
+}
+
+
+
+#pcLogo p {
+  padding: 0 0 0 20px;
+  margin: 0;
+  display: inline;
+  color: white;
+  font-size: 3.5em;
+  text-decoration: none !important;
+}
+
+#pcLogo {
+  display: inline;
+}
+
+#logoAnchor {
+  text-decoration: none !important;
+}
+
+nav {
+  width: 100%;
+  height:80px;
+  background-color: #52007A;
+  text-decoration: none;
+}
+
+
+.links a {
+  margin: 0;
+  text-decoration: none;
+  color:white;
+  float: left;
+  width: 100%;
+  position: relative;
+  top: 15px;
+  padding: 5px
+}
+
+.links a:hover {
+  color: #D685FF;
+}
+
+.links li {
+  float: left;
+  height: 100%;
+}
+#toggle{
+  display: none;
+}
+.burger{
+  margin-right: 30px;
+  float: right;
+  display: none;
+}
+/* 
+.active {
+  background-color: black;
+} */
+
+/* Home Page Hero */
+
+.heroHome {
+  width: 100%;
+  height: 500px;
+  background: url('./Components/HomePage/Hero/heroHome.jpeg');
+  background-repeat: no-repeat;
+}
+
+.heroHome div {
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+h1{
+  font-size: 4em !important;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: gray;
+}
+
+/* Section about computers in home page */
+
+.homeExploreImage {
+  grid-area: imgE;
+  width:75%;
+  /* display: none; */
+}
+
+.homeExploreP {
+  grid-area: PE;
+  font-size: 1.5em;
+  margin: auto auto 5% auto;
+}
+.anchorButtonExplore{
+  display:flex;
+  width:fit-content;
+  height: fit-content;
+  margin: auto;
+  text-decoration: none !important;
+}
+.homeExploreButton {
+  grid-area: buttonE;
+  width: fit-content;
+  margin: 20px auto 0 auto;
+  height: 100%;
+  border: none;
+  background-color: #52007A;
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.homeExploreAnchor {
+  position: relative !important;
+  top: 15%;
+  width: 25%;
+  height: 30%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.homeExploreSection {
+  display: grid;
+  grid-template-areas: 
+  'imgE PE'
+  'imgE buttonE';
+  box-shadow: black 2px 2px 20px;
+  background-color: #EBEBEB;
+}
+
+.homeContactP {
+  grid-area: PC;
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 10px;
+  margin: auto 0 5% 0;
+}
+
+.homeContactImage {
+  grid-area: imgC;
+  width: 100%;
+}
+
+.homeContactButton {
+  grid-area: buttonC;
+  width: 100%;
+  padding-top: 0;
+  height: 100%;
+  border: none;
+  background-color: #52007A;
+  color: white;
+  font-size: 2em;
+}
+
+.homeContactAnchor {
+  position: relative;
+  left: 40%;
+  width: 25%;
+  height: 50%;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+.homeContactSection {
+  display: grid;
+  grid-template-areas: 
+  'PC imgC'
+  'buttonC imgC';
+  grid-template-columns: 60% 40%;
+  padding: 20px 0 20px 0;
+  box-shadow: black 2px 2px 20px;
+}
+
+.slider{
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 40px auto;
+  box-shadow: black 2px 2px 20px;
+}
+
+/* Products page */
+
+#products_h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  width: 100%;
+  text-shadow: 2px 2px 2px lightgray, 3px 3px 2px lightgray, 4px 4px 2px lightgray;
+  padding: 50px 0 20px 0;
+}
+
+
+.filters{
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  padding: 10px 40px 0 0;
+  
+}
+
+.filters label {
+  padding: 0 10px 0 10px;
+  font-size: 1.3em;
+}
+
+.products {
+  width: 100%;
+  margin:0;
+  height: 100%;
+}
+
+.products img {
+  height: 200px;
+  width: 300px;
+  margin: auto;
+  display: block;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+.products p {
+  width: 300px;
+  text-align: left;
+  margin: auto;
+  height: fit-content;
+}
+
+.products li {
+  font-size: 1.25em;
+}
+
+.foodTimes {
+  font-size: 1.5em;
+}
+
+.card {
+  display: inline-block !important;
+  margin: 0 10px !important;
+  width: 400px !important;
+  border: gray solid 2px !important;
+  border-radius: 20px !important;
+  padding: 15px !important;
+  box-shadow: #52007A 2px 5px 15px !important;
+  height: 580px !important;
+}
+
+.cardUl {
+  height: fit-content;
+}
+
+.productRows  {
+  display: grid;
+  padding: 50px 100px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+}
+
+.products h1 { 
+  text-align: center;
+  font-size: 3em;
+}
+
+.products h2 {
+  text-align: center;
+}
+
+.productsButton {
+  background-color: #52007A;
+  color: white;
+  font-size: 2em;
+  border-radius: 4px;
+}
+
+.moveButton {
+  margin: 30px 0 0 139.43px;
+}
+
+/* Contact Page CSS */
+
+.contactHero {
+  background: url('./Components/ContactPage/ContactHero.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 120vh;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+form label {
+  font-size: 2em;
+  display: block;
+  width: 100%;
+}
+
+form input[type=text], input[type=email], input[type=tel]{
+  display: block;
+  width: 97%;
+  font-size: 22px;
+  margin: 10px;
+}
+
+form textarea{
+  margin: 20px auto;
+  border-radius: 4px;
+  width: 99%;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.formContent input{
+  border-radius: 4px;
+  height:20px
+}
+
+form {
+  width: 750px;
+  text-align: left;
+  background: rgba(130, 74, 200, .5);
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid black;
+  color: white;
+}
+
+.moveForm {
+  position: relative;
+  left: 43%;
+  top: 20%;
+  width: fit-content;
+}
+
+.submit {
+  width: 100%;
+  background-color:#52007A;
+  color: white;
+  padding: 14px 40px;
+  margin: auto;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+
+/* Footer CSS */
+footer {
+  background-color:#52007A;
+  width: 100%;
+  height: 140px;
+  color:white;
+  text-align: center;
+  position: static;
+  bottom:0;
+  box-shadow: black 2px 2px 20px;
+  padding: 15px 0 0 0;
+}
+
+footer a {
+  text-decoration: none;
+  color:white;
+}
+
+#feet {
+  margin: 5px;
+}
+
+footer img {
+  height: 50px;
+  padding-top: 15px;
+}
+
+footer a i {
+  font-size: 30px !important;
+  margin: 0 10px;
+}
+
+#FooterPCLogo {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  color: white;
+  font-size: 2em;
+}
+
+#FooterPCLogo p {
+  margin: 0 0 10px 0;
+}
+
+h6 {
+  display: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  
+  /* Home Page */
+  .heroHome div{
+    top: 55%;
+  }
+
+  h1 {
+    font-size: 3.3em !important;
+
+  }
+
+  .homeExploreButton{
+    font-size: 1.5em;
+  }
+  .homeExploreP {
+      font-size: 1.25em;
+  }
+
+  .homeExploreAnchor {
+      height: 60%;
+      width: 30%;
+  }
+
+  .homeExploreAnchor div p {
+      margin-bottom: 35%;
+  }
+
+  .homeContactButton{
+    font-size: 1.5em;
+  }
+
+  .homeContactAnchor {
+      height: fit-content;
+      width: 30%;
+  }
+
+  .homeContactP {
+      font-size: 1.5em;
+  }
+
+  /* Products Page */
+  
+  #products_h2 {
+      padding-top: 20px;
+  }
+
+  .productRows {
+      grid-template-columns: auto ; 
+      justify-content: center; 
+  }
+
+  .card {
+      margin: auto;
+  }
+
+  /* Contact Page */
+
+  .moveForm {
+      left: 25%;
+      top:10px;
+  }
+
+  form {
+      width: 400px;
+  }
+  
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+
+  /* Home Page */
+
+  .heroHome div {
+      top: 42%;
+      font-size: 2.75em;
+  }
+
+  .homeExploreAnchor div p{
+      margin-top: 13%;
+  }
+
+  .homeExploreAnchor {
+      height: 50%;
+  }
+
+  .homeContactAnchor {
+      height: 60%;
+  }
+
+  .homeContactAnchor div {
+      top: 25%;
+  }
+
+  /* Products Page */
+  .productRows {
+      grid-template-columns: auto auto;  
+  }
+
+  /* Contact Page */
+
+  .moveForm {
+      left: 15%;
+      top: 25%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 375px){
+  .navbar{
+    font-size: 2em;
+    display: contents;
+    text-decoration: none;
+    flex-flow: column;
+    flex-wrap: nowrap !important;
+    width: 100%;
+    height: fit-content;
+    z-index: 500;
+    margin-top: -10px;
+    background-color: rgb(127, 37, 165);
+    top: -6px;
+  }
+
+  .navbar li{
+    list-style-type: none;
+  }
+
+  .navbar li a{
+    color: white !important;
+
+  }
+  .links {
+    display: none;
+  }
+
+  .burger {
+    margin-right: 30px;
+    margin-top: 3px;
+    font-size:50px;
+    color:white;
+    display: block;
+    float: right;
+  }
+  
+}

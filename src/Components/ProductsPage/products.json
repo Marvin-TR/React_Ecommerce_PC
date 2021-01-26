@@ -1,0 +1,146 @@
+{"Products": [
+    {
+        "name":"Corsair One" ,
+        "CPU": "Intel Core i9-9900K",
+        "GPU": "Nvidia GeForce RTX 2080 Ti Liquid Cooled",
+        "RAM": "32GB",
+        "Storage": "960GB M.2, 2TB HDD",
+        "Price": 3199.99,
+        "image": "./Images/corsairOne.jpg",
+        "key": 0,
+        "brand": "Corsair"
+    },
+
+    {
+        "name": "MSI Vortex",
+        "CPU": "Intel Core i7-8700",
+        "GPU": "Nvidia GeForce RTX 1070",
+        "RAM": "16GB",
+        "Storage": "256GB SSD, 1TB HDD",
+        "Price": 1499.00,
+        "image":"./Images/MSIVortex.png",
+        "key": 1,
+        "brand": "MSI"
+    },
+
+    {
+        "name": "Zotac Z Box",
+        "CPU": "Intel Core i7-9750H",
+        "GPU": "Nvidia GeForce RTX 2070",
+        "RAM": "16GB",
+        "Storage": "240GB M.2",
+        "Price": 2299.99,
+        "image": "./Images/ZotacVBox.jpg",
+        "key": 2,
+        "brand": "Zotac"
+    },
+
+    {
+        "name": "SkyTech Shiva",
+        "CPU": "AMD Ryzen 5 2600",
+        "GPU": "Nvidia GeForce RTX 2060",
+        "RAM": "16GB",
+        "Storage": "500GB SSD",
+        "Price": 999.00,
+        "image": "./Images/SkyTechShiva.jpg",
+        "key": 3,
+        "brand": "SkyTech"
+    },
+
+    {
+        "name": "SkyTech Archangel",
+        "CPU": "AMD Ryzen 5 2600",
+        "GPU": "AMD Radeon RX 580",
+        "RAM": "8GB",
+        "Storage": "500GB SSD",
+        "Price": 749.99,
+        "image": "./Images/SkyTechArchangel.jpg",
+        "key": 4,
+        "brand": "SkyTech"
+    },
+
+    {
+        "name": "IBUYPOWER Element 9260",
+        "CPU": "IBUYPOWER Element 9260",
+        "GPU": "Nvidia GeForce GTX 1660 Ti",
+        "RAM": "16GB",
+        "Storage": "240GB SSD, 1TB HDD",
+        "Price": 1219.99,
+        "image": "./Images/IBPElement.png",
+        "key": 5,
+        "brand": "IBUYPOWER"
+    },
+
+    {
+        "name": "Alienware Aurora R10",
+        "CPU": "AMD Ryzen 5 3500",
+        "GPU": "Radeon RX 5600",
+        "RAM": "8GB",
+        "Storage": "1TB HDD",
+        "Price": 1449.99,
+        "image": "./Images/AlienwareAuroraR10.jpg",
+        "key": 6 ,
+        "brand": "Alienware"
+    },
+
+    {
+        "name": "Asus ROG Strix GL10DH",
+        "CPU": "AMD Ryzen 7 3700X",
+        "GPU": "Nvidia GeForce GTX 1660 Ti",
+        "RAM": "16GB",
+        "Storage": "512GB SSD",
+        "Price": 1099.999,
+        "image": "./Images/AsusROGStrix.jpg",
+        "key": 7,
+        "brand":"Asus"
+    },
+
+    {
+        "name": "HP Omen Obelisk",
+        "CPU": "Intel Core i9-9900K",
+        "GPU": "Nvidia GeForce RTX 2080 SUPER",
+        "RAM": "32GB",
+        "Storage": "1TB SSD",
+        "Price": 2939.99,
+        "image":"./Images/OmenObelisk.jpg",
+        "key": 8,
+        "brand": "HP"
+    },
+
+    {
+        "name": "CyberPowerPC Gamer Xtreme",
+        "CPU": "Intel Core i5-10400F",
+        "GPU": "Nvidia GeForce GTX 1660 Super",
+        "RAM": "8GB",
+        "Storage": "240GB SSD, 2TB HDD",
+        "Price": 919.0,
+        "image": "./Images/GamerXtreme.jpg",
+        "key": 9,
+        "brand":"CyberPowerPC"
+    },
+
+    {
+        "name":"Dell Inspiron G5 5090" ,
+        "CPU": "Intel Core i7-10700F",
+        "GPU": "Nvidia Geforce GTX 1660 Ti",
+        "RAM": "16GB",
+        "Storage": "512GB SSD",
+        "Price": 1249.00,
+        "image": "./Images/DellG5.jpg",
+        "key": 10,
+        "brand":"Dell"
+    },
+
+    {
+        "name": "Asus ROG Strix GA15DH",
+        "CPU": "AMD Ryzen 7 3700X",
+        "GPU": "AMD Radeon RX 5700 XT",
+        "RAM": "16Gb",
+        "Storage": "512GB SSD, 1TB HDD",
+        "Price": 1299.99,
+        "image": "./Images/AsusROGStrixGA15DH.jpg",
+        "key": 11,
+        "brand":"Asus"
+    }
+]
+}
