@@ -20,7 +20,7 @@ const HomePage = () => {
           <h6>h6</h6>
           <p className="homeContactP">Do you have any questions?</p>
           <a href="/contact" className="homeContactAnchor homeContactButton">Contact Us!!</a>
-          <img src='./Images/heroContact.jpg' alt="contact us image" className="homeContactImage"/>
+          <img src='./Images/heroContact.jpg' alt="contact us" className="homeContactImage"/>
       </section>
       
     </main>
