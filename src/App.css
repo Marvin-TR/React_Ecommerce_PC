@@ -1,4 +1,8 @@
-
+* {
+  margin:0;
+  padding:0;
+  border: 0;
+}
 /* Navbar CSS */
 .links {
   list-style-type: none;
