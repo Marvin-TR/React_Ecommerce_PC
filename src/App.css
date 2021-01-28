@@ -1,8 +1,4 @@
-* {
-  margin:0;
-  padding:0;
-  border: 0;
-}
+
 /* Navbar CSS */
 .links {
   list-style-type: none;
@@ -525,17 +521,17 @@ html, body {
 
 @media (min-width: 375px) and (max-width: 375px){
   .navbar{
-    font-size: 2em !important;
-    display: contents !important;
-    text-decoration: none !important;
-    flex-flow: column !important;
+    font-size: 2em;
+    display: contents;
+    text-decoration: none;
+    flex-flow: column;
     flex-wrap: nowrap !important;
-    width: 100% !important;
-    height: fit-content !important;
-    z-index: 500 !important;
-    margin-top: -10px !important;
-    background-color: rgb(127, 37, 165) !important;
-    top: -6px !important;
+    width: 100%;
+    height: fit-content;
+    z-index: 500;
+    margin-top: -10px;
+    background-color: rgb(127, 37, 165);
+    top: -6px;
   }
 
   .navbar li{

@@ -5,29 +5,62 @@ class ProductPage extends React.Component {
     constructor(){
         super()
         this.state = {
-            products: data.Products
+            products: data.Products,
+            staticProducts: data.Products,
+            price: "default",
+            brand: "default"
         }
     }
 
-    handleOnChange = (event) => {
-        let value = event.target.value;
+    filter = () => {
+        console.log(this.state)
         let newValue = [];
-        event.preventDefault()
-        if(value === '799'){
-            let newProducts = data.Products.filter(product => product.Price <= 799);
+        if(this.state.price === '799' && this.state.brand !== "default"){
+            let newProducts = data.Products.filter(product => {
+                return product.Price <= 799 && product.brand === this.state.brand
+            });
             this.setState({products: newValue.concat(newProducts)})
-        } else if (value === "999"){
+        } else if (this.state.price === "999" && this.state.brand !== "default"){
+            let newProducts = data.Products.filter(product => (product.Price >= 800 && product.Price <= 999 && product.brand === this.state.brand));
+            this.setState({products: newValue.concat(newProducts)})
+        } else if (this.state.price === "1499" && this.state.brand !== "default"){
+            let newProducts = data.Products.filter(product => (product.Price >= 1000 && product.Price <= 1499 && product.brand === this.state.brand));
+            this.setState({products: newValue.concat(newProducts)})
+        } else if (this.state.price === "1500" && this.state.brand !== "default"){
+            let newProducts = data.Products.filter(product => product.Price >= 1500 && product.brand === this.state.brand);
+            this.setState({products: newValue.concat(newProducts)})
+        } else if (this.state.price === "default" && this.state.brand !== "default"){
+            let newProducts = data.Products.filter(product => {
+                return product.brand === this.state.brand
+            })
+            this.setState({products: newProducts})
+        } else if(this.state.price === '799' && this.state.brand === "default"){
+            let newProducts = data.Products.filter(product => {
+                return product.Price <= 799 
+            });
+            this.setState({products: newValue.concat(newProducts)})
+        } else if (this.state.price === "999" && this.state.brand === "default"){
             let newProducts = data.Products.filter(product => (product.Price >= 800 && product.Price <= 999));
             this.setState({products: newValue.concat(newProducts)})
-        } else if (value === "1499"){
+        } else if (this.state.price === "1499" && this.state.brand === "default"){
             let newProducts = data.Products.filter(product => (product.Price >= 1000 && product.Price <= 1499));
             this.setState({products: newValue.concat(newProducts)})
-        } else if (value === "1500"){
+        } else if (this.state.price === "1500" && this.state.brand === "default"){
             let newProducts = data.Products.filter(product => product.Price >= 1500);
             this.setState({products: newValue.concat(newProducts)})
-        } else if (value === "default"){
-            this.setState({products: data.Products })
-        } return newValue
+        } else if (this.state.price === "default" && this.state.brand === "default"){
+            this.setState({products: data.products})
+        }
+}
+
+    handleOnChange = async (event, type) => {
+        let value = event.target.value;
+
+        event.preventDefault()
+        let emptyObject = {}
+        emptyObject[type] = await value
+        await this.setState(emptyObject)
+        this.filter();
     }
 
     handleOnChangeBrand = (event) => {
@@ -76,7 +109,7 @@ class ProductPage extends React.Component {
                 <div className="products">
                     <div class="filters">
                         <label htmlFor="PCs">Filter by price:</label>
-                        <select name="PCs" id="PCs" onChange={this.handleOnChange}>
+                        <select name="PCs" id="PCs" onChange={(event) => {this.handleOnChange(event, "price")}}>
                             <option value="default">default</option>
                             <option value="799">$799 or less</option>
                             <option value="999">$800 to $999</option>
@@ -84,7 +117,7 @@ class ProductPage extends React.Component {
                             <option value="1500">$1500 or more</option>
                         </select>
                         <label htmlFor="Brand">Filter by brand:</label>
-                        <select name="Brand" id="Brand" onChange={this.handleOnChangeBrand}>
+                        <select name="Brand" id="Brand" onChange={(event) => {this.handleOnChange(event, "brand")}}>
                             <option value="default">default</option>
                             <option value="Corsair">Corsair</option>
                             <option value="Asus">Asus</option>
